@@ -7,7 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello, {{ name_html }}!</h1>
-    <h1>Welcome to my Greeting Page</h1>
+    {% if total %}
+    <h2>Total of three numbers is {{ total }}</h2>
+    {% else %}
+    <h2>Since this is GET request, Total hasn't been calculated</h2>
+    {% endif %}
+
 </body>
 </html>
